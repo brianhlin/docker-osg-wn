@@ -3,12 +3,11 @@
 FROM centos:centos8
 
 LABEL name="OSG 3.5 Worker Node Client on EL 8 + development repos"
-LABEL build-date="20200424-0925"
+LABEL build-date="20200424-0927"
 
 RUN yum -y install https://repo.opensciencegrid.org/osg/3.5/osg-3.5-el8-release-latest.rpm \
                    epel-release \
-                   yum-plugin-priorities && \
-    yum -y install --enablerepo=osg-development \
+    yum -y install --enablerepo=osg-development --enablerepo=CentOS-PowerTools \
                    osg-wn-client \
                    redhat-lsb-core \
                    singularity && \
