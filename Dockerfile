@@ -1,11 +1,11 @@
 # GENERATED - EDIT Dockerfile.in INSTEAD
 
-FROM centos:centos7
+FROM centos:centos8
 
-LABEL name="OSG 3.5 Worker Node Client on EL 7 + development repos"
-LABEL build-date="20200415-1725"
+LABEL name="OSG 3.5 Worker Node Client on EL 8 + development repos"
+LABEL build-date="20200424-0925"
 
-RUN yum -y install https://repo.opensciencegrid.org/osg/3.5/osg-3.5-el7-release-latest.rpm \
+RUN yum -y install https://repo.opensciencegrid.org/osg/3.5/osg-3.5-el8-release-latest.rpm \
                    epel-release \
                    yum-plugin-priorities && \
     yum -y install --enablerepo=osg-development \
