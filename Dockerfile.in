@@ -7,7 +7,7 @@ LABEL build-date="@BUILDDATE@"
 RUN yum -y install https://repo.opensciencegrid.org/osg/3.5/osg-3.5-el7-release-latest.rpm \
                    epel-release \
                    yum-plugin-priorities && \
-    yum -y install  \
+    yum -y install   \
                    osg-wn-client \
                    redhat-lsb-core \
                    singularity && \
