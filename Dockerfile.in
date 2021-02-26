@@ -7,7 +7,7 @@ LABEL build-date="@BUILDDATE@"
 RUN yum -y install https://repo.opensciencegrid.org/osg/3.5/osg-3.5-el8-release-latest.rpm \
                    epel-release \
                     && \
-    yum -y install --enablerepo=osg-testing --enablerepo=PowerTools \
+    yum -y install --enablerepo=osg-testing --enablerepo=powertools \
                    osg-wn-client \
                    redhat-lsb-core \
                    singularity && \
